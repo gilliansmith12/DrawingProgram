@@ -1,5 +1,5 @@
 //Global Variables
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight;
+float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 Boolean draw = false;
 //
 void setup() {
