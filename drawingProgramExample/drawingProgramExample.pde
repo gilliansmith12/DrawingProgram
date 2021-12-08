@@ -5,28 +5,29 @@ Boolean draw = false;
 void setup() {
   fullScreen();
   assign();
-  //
+  //Drawing Surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-  } //End Setup()
+} //End Setup()
 
 void draw() {
-
+  quitButtonDraw();
   if ( draw == true && mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
-    } //End Line Draw
-  } //End Draw()
+  } //End Line Draw
+} //End Draw()
 
 void mousePressed() {
   if ( mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
     if ( draw == false ) {
       draw = true;
-      } else {
+    } else {
         draw = false;
-        } //End Draw Boolean
-    } //End Line Draw
-  } //End MousePressed()
+    } //End Draw Boolean
+  } //End Line Draw
+  quitButtonMousePressed();
+} //End MousePressed()
 
 void keyPressed() {
 
-  } //End KeyPressed()
+} //End KeyPressed()
