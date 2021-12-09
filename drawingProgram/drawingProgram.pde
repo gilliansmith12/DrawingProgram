@@ -5,6 +5,7 @@ Boolean draw = false;
 void setup() {
   fullScreen();
   assign();
+  textSetup();
   //Drawing Surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //

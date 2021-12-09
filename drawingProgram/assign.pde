@@ -9,5 +9,7 @@ void assign() {
   quitButtonY = displayHeight*0;
   quitButtonWidth = displayWidth*1/15;
   quitButtonHeight = displayHeight*1/20;
+  //Text Quit Button
+  font = createFont ("Jomolhari", 55);
   //
 } //End Assign()

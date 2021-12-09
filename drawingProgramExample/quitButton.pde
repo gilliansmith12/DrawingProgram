@@ -1,7 +1,7 @@
 //Global Variables
 String quitButton = "X";
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color quitButtonColour, red = #F40000, white = #FFFFFF;
+color quitButtonColour, red = #F40000, white = #FFFFFF, black = #000000;
 
 void quitButtonSetup () {
 
@@ -15,6 +15,7 @@ void quitButtonDraw () {
   } // End Qiut Button Hover Over
   fill(quitButtonColour);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  textCode(quitButton, 51, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
 } //End quitButtonDraw()
 
 void quitButtonMousePressed () {
