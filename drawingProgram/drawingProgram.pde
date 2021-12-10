@@ -13,6 +13,8 @@ void setup() {
 
 void draw() {
   quitButtonDraw();
+  menuButtonDraw();
+  colourButtonDraw();
   if ( draw == true && mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   } //End Line Draw
@@ -27,6 +29,11 @@ void mousePressed() {
     } //End Draw Boolean
   } //End Line Draw
   quitButtonMousePressed();
+  menuButtonMousePressed();
+  colourButtonMousePressed();
+  redButtonMousePressed();
+  orangeButtonMousePressed();
+  yellowButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

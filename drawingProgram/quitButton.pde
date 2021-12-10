@@ -1,7 +1,7 @@
 //Global Variables
 String quitButton = "X";
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color quitButtonColour, red = #F40000, white = #FFFFFF, black = #000000;
+color quitButtonColour;
 
 void quitButtonSetup () {
 

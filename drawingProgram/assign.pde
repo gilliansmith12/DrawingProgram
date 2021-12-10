@@ -1,15 +1,96 @@
 void assign() {
+  //Colours
+  red = #F40000;
+  orange = #F48100;
+  yellow = #FFE932;
+  green = #24C117;
+  blue = #2D82F5;
+  purple = #9D2DF5;
+  pink = #F352D3;
+  brown = #74461C;
+  black = #000000;
+  grey = #646464;
+  white = #FFFFFF;
   //Drawing Surface
   drawingSurfaceX = displayWidth*0;
   drawingSurfaceY = displayHeight*1/4;
   drawingSurfaceWidth = displayWidth;
   drawingSurfaceHeight = displayHeight*3/4;
   //Quit Button
-  quitButtonX = displayWidth*14/15;
+  quitButtonX = displayWidth*90/100;
   quitButtonY = displayHeight*0;
-  quitButtonWidth = displayWidth*1/15;
-  quitButtonHeight = displayHeight*1/20;
+  quitButtonWidth = displayWidth*10/100;
+  quitButtonHeight = displayHeight*5/100;
   //Text Quit Button
   font = createFont ("Jomolhari", 55);
-  //
+  //Dropdown Menu Buttons
+  menuButtonX = displayWidth*0;
+  menuButtonY = displayHeight*0;
+  menuButtonWidth = displayWidth*10/100;
+  menuButtonHeight = displayHeight*10/100;
+  resetButtonX = displayWidth*0;
+  resetButtonY = displayHeight*10/100;
+  resetButtonWidth = displayWidth*10/100;
+  resetButtonHeight = displayHeight*5/100;
+  saveButtonX = displayWidth*0;
+  saveButtonY = displayHeight*15/100;
+  saveButtonWidth = displayWidth*10/100;
+  saveButtonHeight = displayHeight*5/100;
+  exitButtonX = displayWidth*0;
+  exitButtonY = displayHeight*20/100;
+  exitButtonWidth = displayWidth*10/100;
+  exitButtonHeight = displayHeight*5/100;
+  //Dropdown Colour Buttons
+  colourButtonX = displayWidth*10/100;
+  colourButtonY = displayHeight*0;
+  colourButtonWidth = displayWidth*10/100;
+  colourButtonHeight = displayHeight*10/100;
+  redButtonX = displayWidth*10/100;
+  redButtonY = displayHeight*10/100;
+  redButtonWidth = colourButtonWidth*1/3;
+  redButtonHeight = displayHeight*15/400;
+  orangeButtonX = redButtonX+redButtonWidth;
+  orangeButtonY = displayHeight*10/100;
+  orangeButtonWidth = colourButtonWidth*1/3;
+  orangeButtonHeight = displayHeight*15/400;
+  yellowButtonX = orangeButtonX+orangeButtonWidth;
+  yellowButtonY = displayHeight*10/100;
+  yellowButtonWidth = colourButtonWidth*1/3;
+  yellowButtonHeight = displayHeight*15/400;
+  greenButtonX = displayWidth*10/100;
+  greenButtonY = redButtonY+redButtonHeight;
+  greenButtonWidth = colourButtonWidth*1/3;
+  greenButtonHeight = displayHeight*15/400;
+  blueButtonX = greenButtonX+greenButtonWidth;
+  blueButtonY = orangeButtonY+orangeButtonHeight;
+  blueButtonWidth = colourButtonWidth*1/3;
+  blueButtonHeight = displayHeight*15/400;
+  purpleButtonX = blueButtonX+blueButtonWidth;
+  purpleButtonY = yellowButtonY+yellowButtonHeight;
+  purpleButtonWidth = colourButtonWidth*1/3;
+  purpleButtonHeight = displayHeight*15/400;
+  pinkButtonX = displayWidth*10/100;
+  pinkButtonY = greenButtonY+greenButtonHeight;
+  pinkButtonWidth = colourButtonWidth*1/3;
+  pinkButtonHeight = displayHeight*15/400;
+  brownButtonX = pinkButtonX+pinkButtonWidth;
+  brownButtonY = blueButtonY+blueButtonHeight;
+  brownButtonWidth = colourButtonWidth*1/3;
+  brownButtonHeight = displayHeight*15/400;
+  blackButtonX = brownButtonX+brownButtonWidth;
+  blackButtonY = purpleButtonY+purpleButtonHeight;
+  blackButtonWidth = colourButtonWidth*1/3;
+  blackButtonHeight = displayHeight*15/400;
+  greyButtonX = displayWidth*10/100;
+  greyButtonY = pinkButtonY+pinkButtonHeight;
+  greyButtonWidth = colourButtonWidth*1/3;
+  greyButtonHeight = displayHeight*15/400;
+  whiteButtonX = greyButtonX+greyButtonWidth;
+  whiteButtonY = brownButtonY+brownButtonHeight;
+  whiteButtonWidth = colourButtonWidth*1/3;
+  whiteButtonHeight = displayHeight*15/400;
+  randomButtonX = whiteButtonX+whiteButtonWidth;
+  randomButtonY = blackButtonY+blackButtonHeight;
+  randomButtonWidth = colourButtonWidth*1/3;
+  randomButtonHeight = displayHeight*15/400;
 } //End Assign()
