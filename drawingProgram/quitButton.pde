@@ -15,7 +15,7 @@ void quitButtonDraw () {
   } // End Qiut Button Hover Over
   fill(quitButtonColour);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  textCode(quitButton, 51, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  quitButtonTextCode(quitButton, 51, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
 } //End quitButtonDraw()
 
 void quitButtonMousePressed () {

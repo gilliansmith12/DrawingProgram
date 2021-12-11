@@ -5,7 +5,6 @@ Boolean draw = false;
 void setup() {
   fullScreen();
   assign();
-  textSetup();
   //Drawing Surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
@@ -34,6 +33,15 @@ void mousePressed() {
   redButtonMousePressed();
   orangeButtonMousePressed();
   yellowButtonMousePressed();
+  greenButtonMousePressed();
+  blueButtonMousePressed();
+  purpleButtonMousePressed();
+  pinkButtonMousePressed();
+  brownButtonMousePressed();
+  blackButtonMousePressed();
+  greyButtonMousePressed();
+  whiteButtonMousePressed();
+  randomButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

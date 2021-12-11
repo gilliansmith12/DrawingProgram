@@ -1,4 +1,5 @@
 //Global Variables
+String menuText = "Menu";
 float menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight;
 float resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight;
 float saveButtonX, saveButtonY, saveButtonWidth, saveButtonHeight;
@@ -7,6 +8,7 @@ Boolean resetButton = false, saveButton = false, exitButton = false;
 
 void menuButtonDraw() {
   rect(menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight);
+  menuButtonTextCode(menuText, 75, menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight);
   if ( resetButton == true ) {
     rect(resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
   } //End ResetButton

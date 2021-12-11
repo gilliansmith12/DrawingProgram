@@ -93,4 +93,6 @@ void assign() {
   randomButtonY = blackButtonY+blackButtonHeight;
   randomButtonWidth = colourButtonWidth*1/3;
   randomButtonHeight = displayHeight*15/400;
+  randomImage = loadImage("colourSpectrumWave.png"); //1500 x 1500 Square
+  //
 } //End Assign()
