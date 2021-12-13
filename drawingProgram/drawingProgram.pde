@@ -14,6 +14,7 @@ void draw() {
   quitButtonDraw();
   menuButtonDraw();
   colourButtonDraw();
+  strokeButtonDraw();
   if ( draw == true && mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   } //End Line Draw
@@ -24,7 +25,7 @@ void mousePressed() {
     if ( draw == false ) {
       draw = true;
     } else {
-        draw = false;
+      draw = false;
     } //End Draw Boolean
   } //End Line Draw
   quitButtonMousePressed();
@@ -42,6 +43,7 @@ void mousePressed() {
   greyButtonMousePressed();
   whiteButtonMousePressed();
   randomButtonMousePressed();
+  strokeButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {
