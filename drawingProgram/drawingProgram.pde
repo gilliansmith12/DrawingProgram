@@ -44,6 +44,9 @@ void mousePressed() {
   whiteButtonMousePressed();
   randomButtonMousePressed();
   strokeButtonMousePressed();
+  thickButtonMousePressed();
+  mediumButtonMousePressed();
+  thinButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

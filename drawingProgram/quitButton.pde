@@ -14,6 +14,7 @@ void quitButtonDraw () {
     quitButtonColour = white;
   } // End Qiut Button Hover Over
   stroke(black);
+  strokeWeight(1);
   fill(quitButtonColour);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   quitButtonTextCode(quitButton, 51, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);

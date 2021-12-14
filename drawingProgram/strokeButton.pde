@@ -3,9 +3,11 @@ float strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight;
 float thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight;
 float mediumButtonX, mediumButtonY, mediumButtonWidth, mediumButtonHeight;
 float thinButtonX, thinButtonY, thinButtonWidth, thinButtonHeight;
+float strokeSize;
 Boolean thickButton = false, mediumButton = false, thinButton = false;
 
 void strokeButtonDraw() {
+  stroke(black);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
   //
   if ( thickButton == true ) {
@@ -18,6 +20,7 @@ void strokeButtonDraw() {
     rect(thinButtonX, thinButtonY, thinButtonWidth, thinButtonHeight);
   } //End Button
   //
+  strokeWeight(strokeSize);
 } //End StrokButtonDraw
 
 void strokeButtonMousePressed() {
@@ -29,13 +32,19 @@ void strokeButtonMousePressed() {
 } //End StrokButtonMousePressed
 
 void thickButtonMousePressed() {
-  strokeSize = thick;
+  if ( mouseX > thickButtonX && mouseY > thickButtonY && mouseX < thickButtonX+thickButtonWidth && mouseY < thickButtonY+thickButtonHeight ) {
+    strokeSize = 20;
+  }
 } //End ThickButtonMousePressed
 
 void mediumButtonMousePressed() {
-  strokeSize = medium;
+  if ( mouseX > mediumButtonX && mouseY > mediumButtonY && mouseX < mediumButtonX+mediumButtonWidth && mouseY < mediumButtonY+mediumButtonHeight ) {
+    strokeSize = 10;
+  }
 } //End MediumButtonMousePressed
 
 void thinButtonMousePressed() {
-  strokeSize = thin;
+  if ( mouseX > thinButtonX && mouseY > thinButtonY && mouseX < thinButtonX+thinButtonWidth && mouseY < thinButtonY+thinButtonHeight ) {
+    strokeSize = 3;
+  }
 } //End ThinButtonMousePressed
