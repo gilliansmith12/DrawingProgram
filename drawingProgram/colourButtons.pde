@@ -20,6 +20,7 @@ Boolean redButton = false, orangeButton = false, yellowButton = false, greenButt
 Boolean isRandomStroke = false;
 
 void colourButtonDraw() {
+  strokeWeight(1);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   colourButtonTextCode(colourText, 75, colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   if ( redButton == true ) {

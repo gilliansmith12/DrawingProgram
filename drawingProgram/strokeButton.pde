@@ -7,7 +7,6 @@ float strokeSize;
 Boolean thickButton = false, mediumButton = false, thinButton = false;
 
 void strokeButtonDraw() {
-  stroke(black);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
   //
   if ( thickButton == true ) {
