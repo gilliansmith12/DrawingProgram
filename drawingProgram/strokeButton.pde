@@ -7,6 +7,7 @@ float strokeSize;
 Boolean thickButton = false, mediumButton = false, thinButton = false;
 
 void strokeButtonDraw() {
+  stroke(black);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
   //
   if ( thickButton == true ) {
@@ -20,6 +21,7 @@ void strokeButtonDraw() {
   } //End Button
   //
   strokeWeight(strokeSize);
+  stroke(sketchColour);
 } //End StrokButtonDraw
 
 void strokeButtonMousePressed() {

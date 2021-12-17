@@ -13,8 +13,8 @@ void setup() {
 void draw() {
   quitButtonDraw();
   menuButtonDraw();
-  strokeButtonDraw();
   colourButtonDraw();
+  strokeButtonDraw();
   if ( draw == true && mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   } //End Line Draw
