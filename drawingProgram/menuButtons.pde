@@ -4,8 +4,7 @@ float menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight;
 float resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight;
 float saveButtonX, saveButtonY, saveButtonWidth, saveButtonHeight;
 float exitButtonX, exitButtonY, exitButtonWidth, exitButtonHeight;
-float noMenuButtonX, noMenuButtonY, noMenuButtonWidth, noMenuButtonHeight;
-Boolean resetButton = false, saveButton = false, exitButton = false, noMenuButton = false;
+Boolean resetButton = false, saveButton = false, exitButton = false;
 
 void menuButtonDraw() {
   rect(menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight);
@@ -19,23 +18,12 @@ void menuButtonDraw() {
   if ( exitButton == true ) {
     rect(exitButtonX, exitButtonY, exitButtonWidth, exitButtonHeight);
   } //End ExitButton
-  if ( noMenuButton == true ) {
-    noStroke();
-    rect(noMenuButtonX, noMenuButtonY, noMenuButtonWidth, noMenuButtonHeight);
-    strokeWeight(1);
-  } //End NoMenuButton
 } // End MenuButton()
 
 void menuButtonMousePressed() {
-  if ( resetButton == false && saveButton == false && exitButton == false && mouseX > menuButtonX && mouseY > menuButtonY && mouseX < menuButtonX+menuButtonWidth && mouseY < menuButtonY+menuButtonHeight ) {
+  if ( mouseX > menuButtonX && mouseY > menuButtonY && mouseX < menuButtonX+menuButtonWidth && mouseY < menuButtonY+menuButtonHeight ) {
     resetButton = true;
     saveButton = true;
     exitButton = true;
-    noMenuButton = false;
-  } else {
-    resetButton = false;
-    saveButton = false;
-    exitButton = false;
-    noMenuButton = true;
   } //End Menu Button
 } //End MenuButtonMousePressed()

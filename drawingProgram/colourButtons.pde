@@ -14,13 +14,13 @@ float blackButtonX, blackButtonY, blackButtonWidth, blackButtonHeight;
 float greyButtonX, greyButtonY, greyButtonWidth, greyButtonHeight;
 float whiteButtonX, whiteButtonY, whiteButtonWidth, whiteButtonHeight;
 float randomButtonX, randomButtonY, randomButtonWidth, randomButtonHeight;
-float noColourButtonX, noColourButtonY, noColourButtonWidth, noColourButtonHeight;
 color red, orange, yellow, green, blue, purple, pink, brown, black, grey, white;
 color sketchColour;
 Boolean redButton = false, orangeButton = false, yellowButton = false, greenButton = false, blueButton = false, purpleButton = false, pinkButton = false, brownButton = false, blackButton = false, greyButton = false, whiteButton = false, randomButton = false;
-Boolean isRandomStroke = false, noColourButton = false;
+Boolean isRandomStroke = false;
 
 void colourButtonDraw() {
+  strokeWeight(1);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   colourButtonTextCode(colourText, 75, colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   if ( redButton == true ) {
@@ -73,17 +73,12 @@ void colourButtonDraw() {
   } //End Button
   if ( isRandomStroke == true ) {
     sketchColour = color(random(225), random(225), random(225));
-  } //End Button
-  if ( noColourButton = true ) {
-    noStroke();
-    rect(noColourButtonX, noColourButtonY, noColourButtonWidth, noColourButtonHeight);
-    strokeWeight(1);
-  } //End Button
+  }
   stroke(sketchColour);
 } //End ColourButtonDraw
 
 void colourButtonMousePressed() {
-  if ( redButton == false && orangeButton == false && yellowButton == false && greenButton == false && blueButton == false && purpleButton == false && pinkButton == false && brownButton == false && blackButton == false && greyButton == false && whiteButton == false && randomButton == false && mouseX > colourButtonX && mouseY > colourButtonY && mouseX < colourButtonX+colourButtonWidth && mouseY < colourButtonY+colourButtonHeight ) {
+  if ( mouseX > colourButtonX && mouseY > colourButtonY && mouseX < colourButtonX+colourButtonWidth && mouseY < colourButtonY+colourButtonHeight ) {
     redButton = true;
     orangeButton = true;
     yellowButton = true;
@@ -96,22 +91,7 @@ void colourButtonMousePressed() {
     greyButton = true;
     whiteButton = true;
     randomButton = true;
-    noColourButton = false;
-  } else {
-    redButton = false;
-    orangeButton = false;
-    yellowButton = false;
-    greenButton = false;
-    blueButton = false;
-    purpleButton = false;
-    pinkButton = false;
-    brownButton = false;
-    blackButton = false;
-    greyButton = false;
-    whiteButton = false;
-    randomButton = false;
-    noColourButton = true;
-    } //End Colour Button
+  } //End Colour Button
 } //End ColourButtonMousePressed
 
 void redButtonMousePressed() {
@@ -181,9 +161,9 @@ void whiteButtonMousePressed() {
 } //End WhiteButtonMousePressed
 
 void randomButtonMousePressed() {
-  if ( mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
+  if (  mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
     isRandomStroke = true;
-  } else {
+    } else {
     isRandomStroke = false;
-    } //End Random Button
+  } //End Random Button
 } //End RandomButtonMousePressed
