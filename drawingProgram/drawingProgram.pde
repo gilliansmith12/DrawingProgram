@@ -16,9 +16,6 @@ void draw() {
   colourButtonDraw();
   strokeButtonDraw();
   shapeButtonDraw();
-  if ( draw == true && mouseX > drawingSurfaceX && mouseY > drawingSurfaceY && mouseX < drawingSurfaceX+drawingSurfaceWidth && mouseY < drawingSurfaceY+drawingSurfaceHeight ) {
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } //End Line Draw
 } //End Draw()
 
 void mousePressed() {
@@ -49,6 +46,10 @@ void mousePressed() {
   mediumButtonMousePressed();
   thinButtonMousePressed();
   shapeButtonMousePressed();
+  lineButtonMousePressed();
+  circleButtonMousePressed();
+  squareButtonMousePressed();
+  triangleButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

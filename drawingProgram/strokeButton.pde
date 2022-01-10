@@ -1,4 +1,5 @@
 //Global Variable
+String strokeText = "Stroke";
 float strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight;
 float thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight;
 float mediumButtonX, mediumButtonY, mediumButtonWidth, mediumButtonHeight;
