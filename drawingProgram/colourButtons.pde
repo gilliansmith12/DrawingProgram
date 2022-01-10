@@ -161,7 +161,7 @@ void whiteButtonMousePressed() {
 } //End WhiteButtonMousePressed
 
 void randomButtonMousePressed() {
-  if (  mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
+  if ( isRandomStroke = false && mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
     isRandomStroke = true;
     } else {
     isRandomStroke = false;
