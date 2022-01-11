@@ -57,22 +57,24 @@ void assign() {
   strokeButtonY = displayHeight*0;
   strokeButtonWidth = displayWidth*10/100;
   strokeButtonHeight = displayHeight*10/100;
-  thickButtonX = mediumButtonX = thinButtonX = displayWidth*20/100;
-  thickButtonY = displayHeight*10/100;
+  thickButtonX = mediumButtonX = thinButtonX = resetStrokeButtonX = displayWidth*20/100;
+  thickButtonY = resetStrokeButtonY = displayHeight*10/100;
   mediumButtonY = displayHeight*15/100;
   thinButtonY = displayHeight*20/100;
-  thickButtonWidth = mediumButtonWidth = thinButtonWidth = displayWidth*10/100;
+  thickButtonWidth = mediumButtonWidth = thinButtonWidth = resetStrokeButtonWidth = displayWidth*10/100;
   thickButtonHeight = mediumButtonHeight = thinButtonHeight = displayHeight*5/100;
+  resetStrokeButtonHeight = displayHeight*15/100;
   // Dropdown Shape Buttons
   shapeButtonX = displayWidth*30/100;
   shapeButtonY = displayHeight*0;
-  shapeButtonWidth = displayWidth*10/100;
+  shapeButtonWidth = resetShapeButtonWidth = displayWidth*10/100;
   shapeButtonHeight = displayHeight*10/100;
-  lineButtonX = circleButtonX = displayWidth*30/100;
+  lineButtonX = circleButtonX = resetShapeButtonX = displayWidth*30/100;
   squareButtonX = triangleButtonX = displayWidth*35/100;
-  lineButtonY = squareButtonY = displayHeight*10/100;
+  lineButtonY = squareButtonY = resetShapeButtonY = displayHeight*10/100;
   circleButtonY = triangleButtonY = displayHeight*35/200;
   lineButtonWidth = circleButtonWidth = squareButtonWidth = triangleButtonWidth = displayWidth*5/100;
   lineButtonHeight = circleButtonHeight = squareButtonHeight = triangleButtonHeight = displayHeight*15/200;
+  resetShapeButtonHeight = displayHeight*15/100;
   //
 } //End Assign()} //End Assign()

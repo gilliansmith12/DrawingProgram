@@ -5,7 +5,8 @@ float lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight;
 float circleButtonX, circleButtonY, circleButtonWidth, circleButtonHeight;
 float squareButtonX, squareButtonY, squareButtonWidth, squareButtonHeight;
 float triangleButtonX, triangleButtonY, triangleButtonWidth, triangleButtonHeight;
-Boolean isLineButton = false, isCircleButton = false, isSquareButton = false, isTriangleButton = false;
+float resetShapeButtonX, resetShapeButtonY, resetShapeButtonWidth, resetShapeButtonHeight;
+Boolean isLineButton = false, isCircleButton = false, isSquareButton = false, isTriangleButton = false, isResetShapeButton = false;
 Boolean isLine = false, isCircle = false, isSquare = false, isTriangle = false;
 
 void shapeButtonDraw () {
@@ -39,16 +40,32 @@ void shapeButtonDraw () {
     triangle(mouseX-10, mouseY+10, mouseX, mouseY-10, mouseX+10, mouseY+10);
   } //End Button
   //
+  if ( isResetShapeButton == true ) {
+    noStroke();
+    fill(backgroundColour);
+    rect(resetShapeButtonX, resetShapeButtonY, resetShapeButtonWidth, resetShapeButtonHeight);
+    fill(white);
+    stroke(1);
+  } //End Button
   stroke(sketchColour);
   strokeWeight(strokeSize);
 } //End Shape Button Drawing
 
 void shapeButtonMousePressed () {
   if ( mouseX > shapeButtonX && mouseY > shapeButtonY && mouseX < shapeButtonX+shapeButtonWidth && mouseY < shapeButtonY+shapeButtonHeight ) {
-    isLineButton = true;
-    isCircleButton = true;
-    isSquareButton = true;
-    isTriangleButton = true;
+    if ( isLineButton == false && isCircleButton == false && isSquareButton == false && isTriangleButton == false ) {
+      isLineButton = true;
+      isCircleButton = true;
+      isSquareButton = true;
+      isTriangleButton = true;
+      isResetShapeButton = false;
+      } else {
+        isLineButton = false;
+        isCircleButton = false;
+        isSquareButton = false;
+        isTriangleButton = false;
+        isResetShapeButton = true;
+    }
   } //End Shape Button
 } //End Shape Button MousePressed
 
