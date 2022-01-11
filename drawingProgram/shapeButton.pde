@@ -41,7 +41,6 @@ void shapeButtonDraw () {
   //
   stroke(sketchColour);
   strokeWeight(strokeSize);
-  println(isTriangle);
 } //End Shape Button Drawing
 
 void shapeButtonMousePressed () {

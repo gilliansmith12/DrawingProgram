@@ -11,6 +11,7 @@ void assign() {
   black = #000000;
   grey = #646464;
   white = #FFFFFF;
+  backgroundColour = #CBCBCB;
   //Drawing Surface
   drawingSurfaceX = displayWidth*0;
   drawingSurfaceY = displayHeight*1/4;
@@ -26,14 +27,15 @@ void assign() {
   //Dropdown Menu Buttons
   menuButtonX = displayWidth*0;
   menuButtonY = displayHeight*0;
-  menuButtonWidth = displayWidth*10/100;
+  menuButtonWidth = resetMenuButtonWidth = displayWidth*10/100;
   menuButtonHeight = displayHeight*10/100;
-  resetButtonX = saveButtonX = exitButtonX = displayWidth*0;
-  resetButtonY = displayHeight*10/100;
+  resetButtonX = saveButtonX = exitButtonX = resetMenuButtonX = displayWidth*0;
+  resetButtonY = resetMenuButtonY = displayHeight*10/100;
   saveButtonY = displayHeight*15/100;
   exitButtonY = displayHeight*20/100;
   resetButtonWidth = saveButtonWidth = exitButtonWidth = displayWidth*10/100;
   resetButtonHeight = saveButtonHeight = exitButtonHeight = displayHeight*5/100;
+  resetMenuButtonHeight = displayHeight*15/100;
   //Dropdown Colour Buttons
   colourButtonX = displayWidth*10/100;
   colourButtonY = displayHeight*0;

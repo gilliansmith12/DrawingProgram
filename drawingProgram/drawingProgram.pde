@@ -1,10 +1,13 @@
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight;
+color backgroundColour;
 Boolean draw = false;
 //
 void setup() {
   fullScreen();
   assign();
+  //Background
+  background(backgroundColour);  
   //Drawing Surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
