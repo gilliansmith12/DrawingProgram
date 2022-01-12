@@ -13,6 +13,7 @@ void shapeButtonDraw () {
   stroke(black);
   strokeWeight(1);
   rect(shapeButtonX, shapeButtonY, shapeButtonWidth, shapeButtonHeight);
+  shapeButtonTextCode(shapeText, 75, shapeButtonX, shapeButtonY, shapeButtonWidth, shapeButtonHeight);
   //
   if ( isLineButton == true ) {
     rect(lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);

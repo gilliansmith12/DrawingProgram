@@ -11,6 +11,7 @@ Boolean thickButton = false, mediumButton = false, thinButton = false, resetStro
 void strokeButtonDraw() {
   stroke(black);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
+  strokeButtonTextCode(strokeText, 75, strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
   //
   if ( thickButton == true ) {
     rect(thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight);
