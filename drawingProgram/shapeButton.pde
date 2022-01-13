@@ -1,5 +1,5 @@
 //Global Variables
-String shapeText = "Shape";
+String shapeText = "Shape", lineText = "Line", circleText = "Circle", squareText = "Square", triangleText = "Triangle";
 float shapeButtonX, shapeButtonY, shapeButtonWidth, shapeButtonHeight;
 float lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight;
 float circleButtonX, circleButtonY, circleButtonWidth, circleButtonHeight;
@@ -17,15 +17,19 @@ void shapeButtonDraw () {
   //
   if ( isLineButton == true ) {
     rect(lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
+    lineButtonTextCode(lineText, 30, lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
   } // End Button
   if ( isCircleButton == true ) {
     rect(circleButtonX, circleButtonY, circleButtonWidth, circleButtonHeight);
+    circleButtonTextCode(circleText, 30, circleButtonX, circleButtonY, circleButtonWidth, circleButtonHeight);
   } //End Button
   if ( isSquareButton == true ) {
     rect(squareButtonX, squareButtonY, squareButtonWidth, squareButtonHeight);
+    squareButtonTextCode(squareText, 30, squareButtonX, squareButtonY, squareButtonWidth, squareButtonHeight);
   } //End Button
   if ( isTriangleButton == true ) {
     rect(triangleButtonX, triangleButtonY, triangleButtonWidth, triangleButtonHeight);
+    triangleButtonTextCode(triangleText, 30, triangleButtonX, triangleButtonY, triangleButtonWidth, triangleButtonHeight);
   } //End Button
   //
   stroke(sketchColour);

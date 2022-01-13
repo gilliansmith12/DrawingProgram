@@ -7,7 +7,7 @@ void setup() {
   fullScreen();
   assign();
   //Background
-  background(backgroundColour);  
+  background(backgroundColour);
   //Drawing Surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
@@ -19,6 +19,7 @@ void draw() {
   colourButtonDraw();
   strokeButtonDraw();
   shapeButtonDraw();
+  eraserButtonDraw();
 } //End Draw()
 
 void mousePressed() {
@@ -53,6 +54,7 @@ void mousePressed() {
   circleButtonMousePressed();
   squareButtonMousePressed();
   triangleButtonMousePressed();
+  eraserButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

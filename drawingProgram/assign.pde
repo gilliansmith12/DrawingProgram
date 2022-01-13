@@ -76,5 +76,16 @@ void assign() {
   lineButtonWidth = circleButtonWidth = squareButtonWidth = triangleButtonWidth = displayWidth*5/100;
   lineButtonHeight = circleButtonHeight = squareButtonHeight = triangleButtonHeight = displayHeight*15/200;
   resetShapeButtonHeight = displayHeight*15/100;
-  //
+  //Dropdown Eraser Buttons
+  eraserButtonX = displayWidth*40/100;
+  eraserButtonY = displayHeight*0;
+  eraserButtonWidth = displayWidth*10/100;
+  eraserButtonHeight = displayHeight*10/100;
+  largeButtonX = medButtonX = smallButtonX = resetEraserButtonX = displayWidth*40/100;
+  largeButtonY = resetEraserButtonY = displayHeight*10/100;
+  medButtonY = displayHeight*15/100;
+  smallButtonY = displayHeight*20/100;
+  largeButtonWidth = medButtonWidth = smallButtonWidth = resetEraserButtonWidth = displayWidth*10/100;
+  largeButtonHeight = medButtonHeight = smallButtonHeight = displayHeight*5/100;
+  resetEraserButtonHeight = displayHeight*15/100;
 } //End Assign()} //End Assign()

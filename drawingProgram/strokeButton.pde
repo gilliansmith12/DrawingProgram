@@ -1,5 +1,5 @@
 //Global Variable
-String strokeText = "Stroke";
+String strokeText = "Stroke", thickText = "Thick", mediumText = "Medium", thinText = "Thin";
 float strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight;
 float thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight;
 float mediumButtonX, mediumButtonY, mediumButtonWidth, mediumButtonHeight;
@@ -15,12 +15,15 @@ void strokeButtonDraw() {
   //
   if ( thickButton == true ) {
     rect(thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight);
+    thickButtonTextCode(thickText, 30, thickButtonX, thickButtonY, thickButtonWidth, thickButtonHeight);
   } //End Button
   if ( mediumButton == true ) {
     rect(mediumButtonX, mediumButtonY, mediumButtonWidth, mediumButtonHeight);
+    mediumButtonTextCode(mediumText, 30, mediumButtonX, mediumButtonY, mediumButtonWidth, mediumButtonHeight);
   } //End Button
   if ( thinButton == true ) {
     rect(thinButtonX, thinButtonY, thinButtonWidth, thinButtonHeight);
+    thinButtonTextCode(thinText, 30, thinButtonX, thinButtonY, thinButtonWidth, thinButtonHeight);
   } //End Button
   if ( thickButton == false && mediumButton == false && thinButton == false ) {
     strokeSize = 3;

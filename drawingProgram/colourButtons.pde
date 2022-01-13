@@ -192,5 +192,4 @@ void randomButtonMousePressed() {
     } else {
     isRandomStroke = false;
   } //End Random Button
-    println(isRandomStroke);
 } //End RandomButtonMousePressed
