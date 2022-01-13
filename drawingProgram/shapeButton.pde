@@ -28,6 +28,9 @@ void shapeButtonDraw () {
     rect(triangleButtonX, triangleButtonY, triangleButtonWidth, triangleButtonHeight);
   } //End Button
   //
+  stroke(sketchColour);
+  strokeWeight(strokeSize);
+  //
   if ( isLine == true && draw == true ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   } //End Button
@@ -37,8 +40,8 @@ void shapeButtonDraw () {
   if ( isSquare == true && draw == true ) {
     rect(mouseX, mouseY, 50, 50);
   } //End Button
-  if ( isLine == true && draw == true ) {
-    triangle(mouseX-10, mouseY+10, mouseX, mouseY-10, mouseX+10, mouseY+10);
+  if ( isTriangle == true && draw == true ) {
+    triangle(mouseX-25, mouseY+25, mouseX, mouseY-25, mouseX+25, mouseY+25);
   } //End Button
   //
   if ( isResetShapeButton == true ) {
@@ -48,8 +51,6 @@ void shapeButtonDraw () {
     fill(white);
     stroke(1);
   } //End Button
-  stroke(sketchColour);
-  strokeWeight(strokeSize);
 } //End Shape Button Drawing
 
 void shapeButtonMousePressed () {

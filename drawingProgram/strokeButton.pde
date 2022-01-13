@@ -22,6 +22,9 @@ void strokeButtonDraw() {
   if ( thinButton == true ) {
     rect(thinButtonX, thinButtonY, thinButtonWidth, thinButtonHeight);
   } //End Button
+  if ( thickButton == false && mediumButton == false && thinButton == false ) {
+    strokeSize = 3;
+  } //End Button
   //
   if ( resetStrokeButton == true ) {
     noStroke();

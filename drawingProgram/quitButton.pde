@@ -18,6 +18,7 @@ void quitButtonDraw () {
   fill(quitButtonColour);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   quitButtonTextCode(quitButton, 51, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  stroke(sketchColour);
 } //End quitButtonDraw()
 
 void quitButtonMousePressed () {

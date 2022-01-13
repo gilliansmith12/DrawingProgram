@@ -8,6 +8,7 @@ float resetMenuButtonX, resetMenuButtonY, resetMenuButtonWidth, resetMenuButtonH
 Boolean resetButton = false, saveButton = false, exitButton = false, resetMenuButton = false;
 
 void menuButtonDraw() {
+  stroke(black);
   rect(menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight);
   menuButtonTextCode(menuText, 75, menuButtonX, menuButtonY, menuButtonWidth, menuButtonHeight);
   if ( resetButton == true ) {
@@ -26,6 +27,7 @@ void menuButtonDraw() {
     fill(white);
     stroke(1);
   } //End ResetMenuButton
+  stroke(sketchColour);
 } // End MenuButton()
 
 void menuButtonMousePressed() {

@@ -22,6 +22,7 @@ Boolean isRandomStroke = false;
 
 void colourButtonDraw() {
   strokeWeight(1);
+  stroke(black);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   colourButtonTextCode(colourText, 75, colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   if ( redButton == true ) {
@@ -186,9 +187,10 @@ void whiteButtonMousePressed() {
 } //End WhiteButtonMousePressed
 
 void randomButtonMousePressed() {
-  if ( isRandomStroke = false && mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
+  if ( mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
     isRandomStroke = true;
     } else {
     isRandomStroke = false;
   } //End Random Button
+    println(isRandomStroke);
 } //End RandomButtonMousePressed
