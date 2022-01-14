@@ -88,4 +88,4 @@ void assign() {
   largeButtonWidth = medButtonWidth = smallButtonWidth = resetEraserButtonWidth = displayWidth*10/100;
   largeButtonHeight = medButtonHeight = smallButtonHeight = displayHeight*5/100;
   resetEraserButtonHeight = displayHeight*15/100;
-} //End Assign()} //End Assign()
+} //End Assign()

@@ -20,7 +20,7 @@ void eraserButtonDraw () {
   if ( isSmallButton == true ) {
     rect(smallButtonX, smallButtonY, smallButtonWidth, smallButtonHeight);
   } //End Button
-  if ( isResetEraserButton = true ) {
+  if ( isResetEraserButton == true ) {
     noStroke();
     fill(backgroundColour);
     rect(resetEraserButtonX, resetEraserButtonY, resetEraserButtonWidth, resetEraserButtonHeight);
@@ -28,7 +28,6 @@ void eraserButtonDraw () {
     stroke(1);
   } //End Button
   //
-  println(isLargeButton);
   stroke(sketchColour);
   strokeWeight(strokeSize);
 } //End EraserButtonDraw
@@ -48,3 +47,15 @@ void eraserButtonMousePressed () {
     }
   } //End Eraser Button
 } //End EraserButtonMousePressed
+
+void largeButtonMousePressed () {
+
+} //End LargeButtonMousePressed
+
+void medButtonMousePressed () {
+
+} //End MedButtonMousePressed
+
+void smallButtonMousePressed () {
+
+} //End SmallButtonMousePressed
