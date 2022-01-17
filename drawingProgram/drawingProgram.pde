@@ -20,6 +20,7 @@ void draw() {
   strokeButtonDraw();
   shapeButtonDraw();
   eraserButtonDraw();
+  backgroundButtonDraw();
 } //End Draw()
 
 void mousePressed() {
@@ -55,6 +56,7 @@ void mousePressed() {
   squareButtonMousePressed();
   triangleButtonMousePressed();
   eraserButtonMousePressed();
+  backgroundButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

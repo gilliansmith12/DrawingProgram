@@ -37,9 +37,9 @@ void assign() {
   resetButtonHeight = saveButtonHeight = exitButtonHeight = displayHeight*5/100;
   resetMenuButtonHeight = displayHeight*15/100;
   //Dropdown Colour Buttons
-  colourButtonX = resetColourButtonWidth = displayWidth*10/100;
+  colourButtonX = displayWidth*10/100;
   colourButtonY = displayHeight*0;
-  colourButtonWidth = displayWidth*10/100;
+  colourButtonWidth = resetColourButtonWidth = displayWidth*10/100;
   colourButtonHeight = displayHeight*10/100;
   redButtonX = greenButtonX = pinkButtonX = greyButtonX = resetColourButtonX = displayWidth*10/100;
   orangeButtonX = blueButtonX = brownButtonX = whiteButtonX = displayWidth*40/300;
@@ -88,4 +88,19 @@ void assign() {
   largeButtonWidth = medButtonWidth = smallButtonWidth = resetEraserButtonWidth = displayWidth*10/100;
   largeButtonHeight = medButtonHeight = smallButtonHeight = displayHeight*5/100;
   resetEraserButtonHeight = displayHeight*15/100;
+  //Dropdown Background Buttons
+  backgroundButtonX = displayWidth*50/100;
+  backgroundButtonY = displayHeight*0;
+  backgroundButtonWidth = resetBackgroundButtonWidth = displayWidth*10/100;
+  backgroundButtonHeight = displayHeight*10/100;
+  redFillButtonX = greenFillButtonX = pinkFillButtonX = greyFillButtonX = resetBackgroundButtonX = displayWidth*50/100;
+  orangeFillButtonX = blueFillButtonX = brownFillButtonX = whiteFillButtonX = displayWidth*160/300;
+  yellowFillButtonX = purpleFillButtonX = blackFillButtonX = randomFillButtonX = displayWidth*170/300;
+  redFillButtonY = orangeFillButtonY = yellowFillButtonY = resetBackgroundButtonY = displayHeight*10/100;
+  greenFillButtonY = blueFillButtonY = purpleFillButtonY = displayHeight*55/400;
+  pinkFillButtonY = brownFillButtonY = blackFillButtonY = displayHeight*70/400;
+  greyFillButtonY  = whiteFillButtonY = randomFillButtonY = displayHeight*85/400;
+  redFillButtonWidth = orangeFillButtonWidth = yellowFillButtonWidth = greenFillButtonWidth = blueFillButtonWidth = purpleFillButtonWidth = pinkFillButtonWidth = brownFillButtonWidth = blackFillButtonWidth = greyFillButtonWidth = whiteFillButtonWidth = randomFillButtonWidth = backgroundButtonWidth*1/3;
+  redFillButtonHeight = orangeFillButtonHeight = yellowFillButtonHeight = greenFillButtonHeight = blueFillButtonHeight = purpleFillButtonHeight = pinkFillButtonHeight = brownFillButtonHeight = blackFillButtonHeight = greyFillButtonHeight = whiteFillButtonHeight = randomFillButtonHeight = displayHeight*15/400;
+  resetBackgroundButtonHeight = displayHeight*15/100;
 } //End Assign()

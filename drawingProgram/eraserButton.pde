@@ -1,4 +1,5 @@
 //Global Variables
+String eraserText = "Eraser", largeText = "Thick", medText = "Medium", smallText = "Thin";
 float eraserButtonX, eraserButtonY, eraserButtonWidth, eraserButtonHeight;
 float largeButtonX, largeButtonY, largeButtonWidth, largeButtonHeight;
 float medButtonX, medButtonY, medButtonWidth, medButtonHeight;
@@ -10,15 +11,19 @@ void eraserButtonDraw () {
   stroke(black);
   strokeWeight(1);
   rect(eraserButtonX, eraserButtonY, eraserButtonWidth, eraserButtonHeight);
+  eraserButtonTextCode(eraserText, 75, eraserButtonX, eraserButtonY, eraserButtonWidth, eraserButtonHeight);
   //
   if ( isLargeButton == true ) {
     rect(largeButtonX, largeButtonY, largeButtonWidth, largeButtonHeight);
+    largeButtonTextCode(largeText, 30, largeButtonX, largeButtonY, largeButtonWidth, largeButtonHeight);
   } //End Button
   if ( isMedButton == true ) {
     rect(medButtonX, medButtonY, medButtonWidth, medButtonHeight);
+    medButtonTextCode(medText, 30, medButtonX, medButtonY, medButtonWidth, medButtonHeight);
   } //End Button
   if ( isSmallButton == true ) {
     rect(smallButtonX, smallButtonY, smallButtonWidth, smallButtonHeight);
+    smallButtonTextCode(smallText, 30, smallButtonX, smallButtonY, smallButtonWidth, smallButtonHeight);
   } //End Button
   if ( isResetEraserButton == true ) {
     noStroke();
@@ -48,9 +53,11 @@ void eraserButtonMousePressed () {
   } //End Eraser Button
 } //End EraserButtonMousePressed
 
-void largeButtonMousePressed () {
-
-} //End LargeButtonMousePressed
+// void largeButtonMousePressed () {
+//   if () {
+//
+//   } //End Large Button
+// } //End LargeButtonMousePressed
 
 void medButtonMousePressed () {
 

@@ -132,3 +132,58 @@ void triangleButtonTextCode (String text, int size, float rectX, float rectY, fl
   text(triangleText, triangleButtonX, triangleButtonY, triangleButtonWidth, triangleButtonHeight);
   fill(white); //reset
 } //End Text
+
+void eraserButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(eraserText, eraserButtonX, eraserButtonY, eraserButtonWidth, eraserButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void largeButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(largeText, largeButtonX, largeButtonY, largeButtonWidth, largeButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void medButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(medText, medButtonX, medButtonY, medButtonWidth, medButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void smallButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(smallText, smallButtonX, smallButtonY, smallButtonWidth, smallButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void backgroundButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(backgroundText, backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight);
+  fill(white); //reset
+} //End Text
