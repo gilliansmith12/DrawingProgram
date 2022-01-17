@@ -11,7 +11,7 @@ void assign() {
   black = #000000;
   grey = #646464;
   white = #FFFFFF;
-  backgroundColour = #CBCBCB;
+  background = #CBCBCB;
   //Drawing Surface
   drawingSurfaceX = displayWidth*0;
   drawingSurfaceY = displayHeight*1/4;

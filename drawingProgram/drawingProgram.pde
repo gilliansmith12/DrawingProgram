@@ -1,14 +1,15 @@
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight;
-color backgroundColour;
+color background;
 Boolean draw = false;
 //
 void setup() {
   fullScreen();
   assign();
   //Background
-  background(backgroundColour);
+  background(background);
   //Drawing Surface
+  fill(backgroundColour);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
 } //End Setup()
@@ -57,6 +58,18 @@ void mousePressed() {
   triangleButtonMousePressed();
   eraserButtonMousePressed();
   backgroundButtonMousePressed();
+  redFillButtonMousePressed();
+  orangeFillButtonMousePressed();
+  yellowFillButtonMousePressed();
+  greenFillButtonMousePressed();
+  blueFillButtonMousePressed();
+  purpleFillButtonMousePressed();
+  pinkFillButtonMousePressed();
+  brownFillButtonMousePressed();
+  blackFillButtonMousePressed();
+  greyFillButtonMousePressed();
+  whiteFillButtonMousePressed();
+  randomFillButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

@@ -14,6 +14,7 @@ float greyFillButtonX, greyFillButtonY, greyFillButtonWidth, greyFillButtonHeigh
 float whiteFillButtonX, whiteFillButtonY, whiteFillButtonWidth, whiteFillButtonHeight;
 float randomFillButtonX, randomFillButtonY, randomFillButtonWidth, randomFillButtonHeight;
 float resetBackgroundButtonX, resetBackgroundButtonY, resetBackgroundButtonWidth, resetBackgroundButtonHeight;
+color backgroundColour;
 Boolean isRedFillButton = false, isOrangeFillButton = false, isYellowFillButton = false, isGreenFillButton = false, isBlueFillButton = false, isPurpleFillButton = false, isPinkFillButton = false, isBrownFillButton = false, isBlackFillButton = false, isGreyFillButton = false, isWhiteFillButton = false, isRandomFillButton = false, isResetBackgroundButton = false;
 Boolean isRandomFill = false;
 
@@ -81,7 +82,6 @@ void backgroundButtonDraw () {
   //
   stroke(sketchColour);
   strokeWeight(strokeSize);
-  println(isRedFillButton);
 } //End BackgroundButtonDraw
 
 void backgroundButtonMousePressed () {
@@ -117,3 +117,77 @@ void backgroundButtonMousePressed () {
     }
   } //End Background Button
 } //End BackgroundButtonMousePressed
+
+void redFillButtonMousePressed () {
+  if ( mouseX > redFillButtonX && mouseY >redFillButtonY  && mouseX < redFillButtonX+redFillButtonWidth && mouseY < redFillButtonY+redFillButtonHeight ) {
+    backgroundColour = red;
+  } //End Button
+} //End RedFillButtonMousePressed
+
+void orangeFillButtonMousePressed () {
+  if ( mouseX > orangeFillButtonX && mouseY >orangeFillButtonY  && mouseX < orangeFillButtonX+orangeFillButtonWidth && mouseY < orangeFillButtonY+orangeFillButtonHeight ) {
+    backgroundColour = orange;
+  } //End Button
+} //End OrangeFillButtonMousePressed
+
+void yellowFillButtonMousePressed () {
+  if ( mouseX > yellowFillButtonX && mouseY > yellowFillButtonY && mouseX < yellowFillButtonX+yellowFillButtonWidth && mouseY < yellowFillButtonY+yellowFillButtonHeight ) {
+    backgroundColour = yellow;
+  } //End Button
+} //End YellowFillButtonMousePressed
+
+void greenFillButtonMousePressed () {
+  if ( mouseX > greenFillButtonX && mouseY > greenFillButtonY && mouseX < greenFillButtonX+greyFillButtonWidth && mouseY < greenFillButtonY+greenFillButtonHeight) {
+    backgroundColour = green;
+  } //End Button
+} //End GreenFillButtonMousePressed
+
+void blueFillButtonMousePressed () {
+  if ( mouseX > blueFillButtonX && mouseY > blueFillButtonY && mouseX < blueFillButtonX+blueFillButtonWidth && mouseY < blueFillButtonY+blueFillButtonHeight) {
+    backgroundColour = blue;
+  } //End Button
+} //End BlueFillButtonMousePressed
+
+void purpleFillButtonMousePressed () {
+  if ( mouseX > purpleFillButtonX && mouseY > purpleFillButtonY && mouseX < purpleFillButtonX+purpleFillButtonWidth && mouseY < purpleFillButtonY+purpleFillButtonHeight ) {
+    backgroundColour = purple;
+  } //End Button
+} //End PurpleFillButtonMousePressed
+
+void pinkFillButtonMousePressed () {
+  if ( mouseX > pinkFillButtonX && mouseY > pinkFillButtonY && mouseX < pinkFillButtonX+pinkFillButtonWidth && mouseY < pinkFillButtonY+pinkFillButtonHeight ) {
+    backgroundColour = pink;
+  } //End Button
+} //End PinkFillButtonMousePressed
+
+void brownFillButtonMousePressed () {
+  if ( mouseX > brownFillButtonX && mouseY > brownFillButtonY && mouseX < brownFillButtonX+brownFillButtonWidth && mouseY < brownFillButtonY+brownFillButtonHeight ) {
+    backgroundColour = brown;
+  } //End Button
+} //End BrownFillButtonMousePressed
+
+void blackFillButtonMousePressed () {
+  if ( mouseX > blackFillButtonX && mouseY > blackFillButtonY && mouseX < blackFillButtonX+blackFillButtonWidth && mouseY < blackFillButtonY+blackFillButtonHeight ) {
+    backgroundColour = black;
+  } //End Button
+} //End BlackFillButtonMousePressed
+
+void greyFillButtonMousePressed () {
+  if ( mouseX > greyFillButtonX && mouseY > greyFillButtonY && mouseX < greyFillButtonX+greyFillButtonWidth && mouseY < greyFillButtonY+greyFillButtonHeight ) {
+    backgroundColour = grey;
+  } //End Button
+} //End GreyFillButtonMousePressed
+
+void whiteFillButtonMousePressed () {
+  if ( mouseX > whiteFillButtonX && mouseY > whiteFillButtonY && mouseX < whiteFillButtonX+whiteFillButtonWidth && mouseY < whiteFillButtonY+whiteFillButtonHeight ) {
+    backgroundColour = white;
+  } //End Button
+} //End WhiteFillButtonMousePressed
+
+void randomFillButtonMousePressed () {
+  if ( mouseX > randomFillButtonX && mouseY > randomFillButtonY && mouseX < randomFillButtonX+randomFillButtonWidth && mouseY < randomFillButtonY+randomFillButtonHeight ) {
+    isRandomFill = true;
+  } else {
+    isRandomFill = false;
+    } //End Button
+} //End RandomFillButtonMousePressed
