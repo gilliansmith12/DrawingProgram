@@ -22,7 +22,7 @@ void menuButtonDraw() {
   } //End ExitButton
   if ( resetMenuButton == true ) {
     noStroke();
-    fill(backgroundColour);
+    fill(background);
     rect(resetMenuButtonX, resetMenuButtonY, resetMenuButtonWidth, resetMenuButtonHeight);
     fill(white);
     stroke(1);

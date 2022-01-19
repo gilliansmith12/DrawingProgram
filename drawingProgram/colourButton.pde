@@ -78,7 +78,7 @@ void colourButtonDraw() {
   }
   if ( resetColourButton == true ) {
     noStroke();
-    fill(backgroundColour);
+    fill(background);
     rect(resetColourButtonX, resetColourButtonY, resetColourButtonWidth, resetColourButtonHeight);
     fill(white);
     stroke(1);

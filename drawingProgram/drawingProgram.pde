@@ -1,5 +1,6 @@
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight;
+float greySpaceX, greySpaceY, greySpaceWidth, greySpaceHeight;
 color background;
 Boolean draw = false;
 //
@@ -9,12 +10,16 @@ void setup() {
   //Background
   background(background);
   //Drawing Surface
-  fill(backgroundColour);
+  fill(white);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
 } //End Setup()
 
 void draw() {
+  fill(background);
+  rect(greySpaceX, greySpaceY, greySpaceWidth, greySpaceHeight);
+  fill(white);
+  //
   quitButtonDraw();
   menuButtonDraw();
   colourButtonDraw();

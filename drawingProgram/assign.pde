@@ -17,6 +17,11 @@ void assign() {
   drawingSurfaceY = displayHeight*1/4;
   drawingSurfaceWidth = displayWidth;
   drawingSurfaceHeight = displayHeight*3/4;
+  //GreySpace
+  greySpaceX = displayWidth*0;
+  greySpaceY = displayHeight*0;
+  greySpaceWidth = displayWidth;
+  greySpaceHeight = displayHeight*1/4;
   //Quit Button
   quitButtonX = displayWidth*90/100;
   quitButtonY = displayHeight*0;

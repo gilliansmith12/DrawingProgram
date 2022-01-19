@@ -31,7 +31,7 @@ void strokeButtonDraw() {
   //
   if ( resetStrokeButton == true ) {
     noStroke();
-    fill(backgroundColour);
+    fill(background);
     rect(resetStrokeButtonX, resetStrokeButtonY, resetStrokeButtonWidth, resetStrokeButtonHeight);
     fill(white);
     stroke(1);

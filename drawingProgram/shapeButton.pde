@@ -50,7 +50,7 @@ void shapeButtonDraw () {
   //
   if ( isResetShapeButton == true ) {
     noStroke();
-    fill(backgroundColour);
+    fill(background);
     rect(resetShapeButtonX, resetShapeButtonY, resetShapeButtonWidth, resetShapeButtonHeight);
     fill(white);
     stroke(1);
