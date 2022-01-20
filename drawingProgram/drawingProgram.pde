@@ -24,7 +24,6 @@ void draw() {
   stroke(sketchColour);
   fill(white);
   //
-  quitButtonDraw();
   menuButtonDraw();
   colourButtonDraw();
   strokeButtonDraw();
@@ -41,8 +40,9 @@ void mousePressed() {
       draw = false;
     } //End Draw Boolean
   } //End Line Draw
-  quitButtonMousePressed();
   menuButtonMousePressed();
+  exitButtonMousePressed();
+  resetButtonMousePressed();
   colourButtonMousePressed();
   redButtonMousePressed();
   orangeButtonMousePressed();

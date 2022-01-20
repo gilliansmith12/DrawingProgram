@@ -121,73 +121,73 @@ void colourButtonMousePressed() {
 } //End ColourButtonMousePressed
 
 void redButtonMousePressed() {
-  if ( mouseX > redButtonX && mouseY > redButtonY && mouseX < redButtonX+redButtonWidth && mouseY < redButtonY+redButtonHeight ) {
+  if ( redButton == true && mouseX > redButtonX && mouseY > redButtonY && mouseX < redButtonX+redButtonWidth && mouseY < redButtonY+redButtonHeight ) {
     sketchColour = red;
   } //End Red Button
 } //End RedButtonMousePressed
 
 void orangeButtonMousePressed() {
-  if ( mouseX > orangeButtonX && mouseY > orangeButtonY && mouseX < orangeButtonX+orangeButtonWidth && mouseY < orangeButtonY+orangeButtonHeight ) {
+  if ( orangeButton == true && mouseX > orangeButtonX && mouseY > orangeButtonY && mouseX < orangeButtonX+orangeButtonWidth && mouseY < orangeButtonY+orangeButtonHeight ) {
     sketchColour = orange;
   } //End Orange Button
 } //End OrangeButtonMousePressed
 
 void yellowButtonMousePressed() {
-  if ( mouseX > yellowButtonX && mouseY > yellowButtonY && mouseX < yellowButtonX+yellowButtonWidth && mouseY < yellowButtonY+yellowButtonHeight ) {
+  if ( yellowButton == true && mouseX > yellowButtonX && mouseY > yellowButtonY && mouseX < yellowButtonX+yellowButtonWidth && mouseY < yellowButtonY+yellowButtonHeight ) {
     sketchColour = yellow;
   } //End Yellow Button
 } //End YellowButtonMousePressed
 
 void greenButtonMousePressed() {
-  if ( mouseX > greenButtonX && mouseY > greenButtonY && mouseX < greenButtonX+greenButtonWidth && mouseY < greenButtonY+greenButtonHeight ) {
+  if ( greenButton == true && mouseX > greenButtonX && mouseY > greenButtonY && mouseX < greenButtonX+greenButtonWidth && mouseY < greenButtonY+greenButtonHeight ) {
     sketchColour = green;
   } //End Green Button
 } //End GreenButtonMousePressed
 
 void blueButtonMousePressed() {
-  if ( mouseX > blueButtonX && mouseY > blueButtonY && mouseX < blueButtonX+blueButtonWidth && mouseY < blueButtonY+blueButtonHeight ) {
+  if ( blueButton == true && mouseX > blueButtonX && mouseY > blueButtonY && mouseX < blueButtonX+blueButtonWidth && mouseY < blueButtonY+blueButtonHeight ) {
     sketchColour = blue;
   } //End Blue Button
 } //End BlueButtonMousePressed
 
 void purpleButtonMousePressed() {
-  if ( mouseX > purpleButtonX && mouseY > purpleButtonY && mouseX < purpleButtonX+purpleButtonWidth && mouseY < purpleButtonY+purpleButtonHeight ) {
+  if ( purpleButton == true && mouseX > purpleButtonX && mouseY > purpleButtonY && mouseX < purpleButtonX+purpleButtonWidth && mouseY < purpleButtonY+purpleButtonHeight ) {
     sketchColour = purple;
   } //End Purple Button
 } //End PurpleButtonMousePressed
 
 void pinkButtonMousePressed() {
-  if ( mouseX > pinkButtonX && mouseY > pinkButtonY && mouseX < pinkButtonX+pinkButtonWidth && mouseY < pinkButtonY+pinkButtonHeight ) {
+  if ( pinkButton == true && mouseX > pinkButtonX && mouseY > pinkButtonY && mouseX < pinkButtonX+pinkButtonWidth && mouseY < pinkButtonY+pinkButtonHeight ) {
     sketchColour = pink;
   } //End Pink Button
 } //End PinkButtonMousePressed
 
 void brownButtonMousePressed() {
-  if ( mouseX > brownButtonX && mouseY > brownButtonY && mouseX < brownButtonX+brownButtonWidth && mouseY < brownButtonY+brownButtonHeight ) {
+  if ( brownButton == true && mouseX > brownButtonX && mouseY > brownButtonY && mouseX < brownButtonX+brownButtonWidth && mouseY < brownButtonY+brownButtonHeight ) {
     sketchColour = brown;
   } //End Brown Button
 } //End BrownButtonMousePressed
 
 void blackButtonMousePressed() {
-  if ( mouseX > blackButtonX && mouseY > blackButtonY && mouseX < blackButtonX+blackButtonWidth && mouseY < blackButtonY+blackButtonHeight ) {
+  if ( blackButton == true && mouseX > blackButtonX && mouseY > blackButtonY && mouseX < blackButtonX+blackButtonWidth && mouseY < blackButtonY+blackButtonHeight ) {
     sketchColour = black;
   } //End Black Button
 } //End BlackButtonMousePressed
 
 void greyButtonMousePressed() {
-  if ( mouseX > greyButtonX && mouseY > greyButtonY && mouseX < greyButtonX+greyButtonWidth && mouseY < greyButtonY+greyButtonHeight ) {
+  if ( greyButton == true && mouseX > greyButtonX && mouseY > greyButtonY && mouseX < greyButtonX+greyButtonWidth && mouseY < greyButtonY+greyButtonHeight ) {
     sketchColour = grey;
   } //End Grey Button
 } //End GreyButtonMousePressed
 
 void whiteButtonMousePressed() {
-  if ( mouseX > whiteButtonX && mouseY > whiteButtonY && mouseX < whiteButtonX+whiteButtonWidth && mouseY < whiteButtonY+whiteButtonHeight ) {
+  if ( whiteButton == true && mouseX > whiteButtonX && mouseY > whiteButtonY && mouseX < whiteButtonX+whiteButtonWidth && mouseY < whiteButtonY+whiteButtonHeight ) {
     sketchColour = white;
   } //End White Button
 } //End WhiteButtonMousePressed
 
 void randomButtonMousePressed() {
-  if ( mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
+  if ( randomButton == true && mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
     sketchColour = color(random(255), random (255), random(255));
   } //End Random Button
 } //End RandomButtonMousePressed

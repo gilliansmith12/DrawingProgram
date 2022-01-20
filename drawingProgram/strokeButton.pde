@@ -57,19 +57,19 @@ void strokeButtonMousePressed() {
 } //End StrokButtonMousePressed
 
 void thickButtonMousePressed() {
-  if ( mouseX > thickButtonX && mouseY > thickButtonY && mouseX < thickButtonX+thickButtonWidth && mouseY < thickButtonY+thickButtonHeight ) {
+  if ( thickButton == true && mouseX > thickButtonX && mouseY > thickButtonY && mouseX < thickButtonX+thickButtonWidth && mouseY < thickButtonY+thickButtonHeight ) {
     strokeSize = 20;
   }
 } //End ThickButtonMousePressed
 
 void mediumButtonMousePressed() {
-  if ( mouseX > mediumButtonX && mouseY > mediumButtonY && mouseX < mediumButtonX+mediumButtonWidth && mouseY < mediumButtonY+mediumButtonHeight ) {
+  if ( mediumButton == true && mouseX > mediumButtonX && mouseY > mediumButtonY && mouseX < mediumButtonX+mediumButtonWidth && mouseY < mediumButtonY+mediumButtonHeight ) {
     strokeSize = 10;
   }
 } //End MediumButtonMousePressed
 
 void thinButtonMousePressed() {
-  if ( mouseX > thinButtonX && mouseY > thinButtonY && mouseX < thinButtonX+thinButtonWidth && mouseY < thinButtonY+thinButtonHeight ) {
+  if ( thinButton == true && mouseX > thinButtonX && mouseY > thinButtonY && mouseX < thinButtonX+thinButtonWidth && mouseY < thinButtonY+thinButtonHeight ) {
     strokeSize = 3;
   }
 } //End ThinButtonMousePressed

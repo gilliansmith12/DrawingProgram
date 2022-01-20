@@ -22,12 +22,7 @@ void assign() {
   greySpaceY = displayHeight*0;
   greySpaceWidth = displayWidth;
   greySpaceHeight = displayHeight*1/4;
-  //Quit Button
-  quitButtonX = displayWidth*90/100;
-  quitButtonY = displayHeight*0;
-  quitButtonWidth = displayWidth*10/100;
-  quitButtonHeight = displayHeight*5/100;
-  //Text Quit Button
+  //Font
   font = createFont ("Jomolhari", 55);
   //Dropdown Menu Buttons
   menuButtonX = displayWidth*0;

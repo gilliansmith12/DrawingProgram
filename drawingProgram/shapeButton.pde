@@ -78,17 +78,17 @@ void shapeButtonMousePressed () {
 } //End Shape Button MousePressed
 
 void lineButtonMousePressed () {
-  if ( isLine == false && mouseX > lineButtonX && mouseY > lineButtonY && mouseX < lineButtonX+lineButtonWidth && mouseY < lineButtonY+lineButtonHeight ) {
+  if ( isLineButton == true && mouseX > lineButtonX && mouseY > lineButtonY && mouseX < lineButtonX+lineButtonWidth && mouseY < lineButtonY+lineButtonHeight ) {
     isLine = true;
     isCircle = false;
     isSquare = false;
     isTriangle = false;
-    
+
   } //End Line Button
 } //End Line Button MousePressed
 
 void circleButtonMousePressed () {
-  if ( isCircle == false && mouseX > circleButtonX && mouseY > circleButtonY && mouseX < circleButtonX+circleButtonWidth && mouseY < circleButtonY+circleButtonHeight ) {
+  if ( isCircleButton == true && mouseX > circleButtonX && mouseY > circleButtonY && mouseX < circleButtonX+circleButtonWidth && mouseY < circleButtonY+circleButtonHeight ) {
     isLine = false;
     isCircle = true;
     isSquare = false;
@@ -97,7 +97,7 @@ void circleButtonMousePressed () {
 } //End Circle Button MousePressed
 
 void squareButtonMousePressed () {
-  if ( isSquare == false && mouseX > squareButtonX && mouseY > squareButtonY && mouseX < squareButtonX+squareButtonWidth && mouseY < squareButtonY+squareButtonHeight ) {
+  if ( isSquareButton == true && mouseX > squareButtonX && mouseY > squareButtonY && mouseX < squareButtonX+squareButtonWidth && mouseY < squareButtonY+squareButtonHeight ) {
     isLine = false;
     isCircle = false;
     isSquare = true;
@@ -106,7 +106,7 @@ void squareButtonMousePressed () {
 } //End Square Button MousePressed
 
 void triangleButtonMousePressed () {
-  if ( isTriangle == false && mouseX > triangleButtonX && mouseY > triangleButtonY && mouseX < triangleButtonX+triangleButtonWidth && mouseY < triangleButtonY+triangleButtonHeight ) {
+  if ( isTriangleButton == true && mouseX > triangleButtonX && mouseY > triangleButtonY && mouseX < triangleButtonX+triangleButtonWidth && mouseY < triangleButtonY+triangleButtonHeight ) {
     isLine = false;
     isCircle = false;
     isSquare = false;
