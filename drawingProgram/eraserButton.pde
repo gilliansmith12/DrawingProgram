@@ -56,20 +56,20 @@ void eraserButtonMousePressed () {
 void largeButtonMousePressed () {
   if ( mouseX > largeButtonX && mouseY > largeButtonY && mouseX < largeButtonX+largeButtonWidth && mouseY < largeButtonY+largeButtonHeight ) {
     strokeSize = 20;
-    stroke(backgroundColour);
+    sketchColour = backgroundColour;
   } //End Large Button
 } //End LargeButtonMousePressed
 
 void medButtonMousePressed () {
   if ( mouseX > medButtonX && mouseY > medButtonY && mouseX < medButtonX+medButtonWidth && mouseY < medButtonY+medButtonHeight ) {
     strokeSize = 10;
-    stroke(backgroundColour);
+    sketchColour = backgroundColour;
   } //End Med Button
 } //End MedButtonMousePressed
 
 void smallButtonMousePressed () {
   if ( mouseX > smallButtonX && mouseY > smallButtonY && mouseX < smallButtonX+smallButtonWidth && mouseY < smallButtonY+smallButtonHeight ) {
     strokeSize = 3;
-    stroke(backgroundColour);
+    sketchColour = backgroundColour;
   } //End Small Button
 } //End SmallButtonMousePressed

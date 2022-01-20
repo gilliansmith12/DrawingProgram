@@ -14,9 +14,8 @@ float greyFillButtonX, greyFillButtonY, greyFillButtonWidth, greyFillButtonHeigh
 float whiteFillButtonX, whiteFillButtonY, whiteFillButtonWidth, whiteFillButtonHeight;
 float randomFillButtonX, randomFillButtonY, randomFillButtonWidth, randomFillButtonHeight;
 float resetBackgroundButtonX, resetBackgroundButtonY, resetBackgroundButtonWidth, resetBackgroundButtonHeight;
-color fillColour, backgroundColour;
+color backgroundColour;
 Boolean isRedFillButton = false, isOrangeFillButton = false, isYellowFillButton = false, isGreenFillButton = false, isBlueFillButton = false, isPurpleFillButton = false, isPinkFillButton = false, isBrownFillButton = false, isBlackFillButton = false, isGreyFillButton = false, isWhiteFillButton = false, isRandomFillButton = false, isResetBackgroundButton = false;
-Boolean isRandomFill = false;
 
 void backgroundButtonDraw () {
   strokeWeight(1);
@@ -72,9 +71,7 @@ void backgroundButtonDraw () {
     rect(randomFillButtonX, randomFillButtonY, randomFillButtonWidth, randomFillButtonHeight);
     image(randomImage, randomFillButtonX, randomFillButtonY, randomFillButtonWidth, randomFillButtonHeight);
   } //End Button
-  if ( isRandomFill == true ) {
-    fillColour = color(random(225), random(225), random(225));
-  } //End Button
+  //
   if ( isResetBackgroundButton == true ) {
     noStroke();
     fill(background);
@@ -211,10 +208,8 @@ void whiteFillButtonMousePressed () {
 
 void randomFillButtonMousePressed () {
   if ( mouseX > randomFillButtonX && mouseY > randomFillButtonY && mouseX < randomFillButtonX+randomFillButtonWidth && mouseY < randomFillButtonY+randomFillButtonHeight ) {
-    isRandomFill = true;
-    fill(fillColour);
+    backgroundColour = color(random(255), random(255), random(255));
+    fill(backgroundColour);
     rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
-  } else {
-    isRandomFill = false;
     } //End Button
 } //End RandomFillButtonMousePressed

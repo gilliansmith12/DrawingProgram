@@ -17,7 +17,11 @@ void setup() {
 
 void draw() {
   fill(background);
+  stroke(black);
+  strokeWeight(1);
   rect(greySpaceX, greySpaceY, greySpaceWidth, greySpaceHeight);
+  strokeWeight(strokeSize);
+  stroke(sketchColour);
   fill(white);
   //
   quitButtonDraw();
@@ -63,6 +67,8 @@ void mousePressed() {
   triangleButtonMousePressed();
   eraserButtonMousePressed();
   backgroundButtonMousePressed();
+  stroke(black);
+  strokeWeight(1);
   redFillButtonMousePressed();
   orangeFillButtonMousePressed();
   yellowFillButtonMousePressed();
@@ -75,6 +81,11 @@ void mousePressed() {
   greyFillButtonMousePressed();
   whiteFillButtonMousePressed();
   randomFillButtonMousePressed();
+  strokeWeight(strokeSize);
+  stroke(sketchColour);
+  largeButtonMousePressed();
+  medButtonMousePressed();
+  smallButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

@@ -33,6 +33,7 @@ void shapeButtonDraw () {
   } //End Button
   //
   stroke(sketchColour);
+  fill(sketchColour);
   strokeWeight(strokeSize);
   //
   if ( isLine == true && draw == true ) {
@@ -55,6 +56,7 @@ void shapeButtonDraw () {
     fill(white);
     stroke(1);
   } //End Button
+    fill(white);
 } //End Shape Button Drawing
 
 void shapeButtonMousePressed () {
@@ -81,6 +83,7 @@ void lineButtonMousePressed () {
     isCircle = false;
     isSquare = false;
     isTriangle = false;
+    
   } //End Line Button
 } //End Line Button MousePressed
 

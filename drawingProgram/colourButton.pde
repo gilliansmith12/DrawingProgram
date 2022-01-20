@@ -188,8 +188,6 @@ void whiteButtonMousePressed() {
 
 void randomButtonMousePressed() {
   if ( mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
-    isRandomStroke = true;
-    } else {
-    isRandomStroke = false;
+    sketchColour = color(random(255), random (255), random(255));
   } //End Random Button
 } //End RandomButtonMousePressed
