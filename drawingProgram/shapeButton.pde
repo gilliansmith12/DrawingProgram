@@ -9,6 +9,12 @@ float resetShapeButtonX, resetShapeButtonY, resetShapeButtonWidth, resetShapeBut
 Boolean isLineButton = false, isCircleButton = false, isSquareButton = false, isTriangleButton = false, isResetShapeButton = false;
 Boolean isLine = false, isCircle = false, isSquare = false, isTriangle = false;
 
+void shapeButtonSetup () {
+  if ( draw == true ) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+} //End ShapeButtonSetup
+
 void shapeButtonDraw () {
   stroke(black);
   strokeWeight(1);
@@ -83,7 +89,6 @@ void lineButtonMousePressed () {
     isCircle = false;
     isSquare = false;
     isTriangle = false;
-
   } //End Line Button
 } //End Line Button MousePressed
 

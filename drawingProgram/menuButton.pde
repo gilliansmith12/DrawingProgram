@@ -68,6 +68,12 @@ void resetButtonMousePressed () {
   }
 } //End ResetButtonMousePressed()
 
+void saveButtonMousePressed () {
+  if ( saveButton == true && mouseX > saveButtonX && mouseY > saveButtonY && mouseX < saveButtonX+saveButtonWidth && mouseY < saveButtonY+saveButtonHeight ) {
+    saveFrame("sketch.png");
+  }
+} //End SaveButtonMousePressed
+
 void exitButtonMousePressed () {
   if ( exitButton == true && mouseX > exitButtonX && mouseY > exitButtonY && mouseX < exitButtonX+exitButtonWidth && mouseY < exitButtonY+exitButtonHeight ) {
     exit();

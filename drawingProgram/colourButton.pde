@@ -20,6 +20,10 @@ color sketchColour;
 Boolean redButton = false, orangeButton = false, yellowButton = false, greenButton = false, blueButton = false, purpleButton = false, pinkButton = false, brownButton = false, blackButton = false, greyButton = false, whiteButton = false, randomButton = false, resetColourButton = false;
 Boolean isRandomStroke = false;
 
+void colourButtonSetup () {
+  sketchColour = black;
+} //End ColourButtonSetup
+
 void colourButtonDraw() {
   strokeWeight(1);
   stroke(black);
@@ -188,6 +192,6 @@ void whiteButtonMousePressed() {
 
 void randomButtonMousePressed() {
   if ( randomButton == true && mouseX > randomButtonX && mouseY > randomButtonY && mouseX < randomButtonX+randomButtonWidth && mouseY < randomButtonY+randomButtonHeight ) {
-    sketchColour = color(random(255), random (255), random(255));
+    sketchColour = color(random(255), random(255), random(255));
   } //End Random Button
 } //End RandomButtonMousePressed

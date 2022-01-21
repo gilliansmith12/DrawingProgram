@@ -17,6 +17,10 @@ float resetBackgroundButtonX, resetBackgroundButtonY, resetBackgroundButtonWidth
 color backgroundColour;
 Boolean isRedFillButton = false, isOrangeFillButton = false, isYellowFillButton = false, isGreenFillButton = false, isBlueFillButton = false, isPurpleFillButton = false, isPinkFillButton = false, isBrownFillButton = false, isBlackFillButton = false, isGreyFillButton = false, isWhiteFillButton = false, isRandomFillButton = false, isResetBackgroundButton = false;
 
+void backgroundButtonSetup () {
+  backgroundColour = white;
+} //End BackgroundButtonSetup
+
 void backgroundButtonDraw () {
   strokeWeight(1);
   stroke(black);

@@ -10,8 +10,15 @@ void setup() {
   //Background
   background(background);
   //Drawing Surface
+  stroke(black);
+  strokeWeight(1);
   fill(white);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
+  //
+  colourButtonSetup();
+  strokeButtonSetup();
+  shapeButtonSetup();
+  backgroundButtonSetup();
   //
 } //End Setup()
 
@@ -41,8 +48,9 @@ void mousePressed() {
     } //End Draw Boolean
   } //End Line Draw
   menuButtonMousePressed();
-  exitButtonMousePressed();
   resetButtonMousePressed();
+  saveButtonMousePressed();
+  exitButtonMousePressed();
   colourButtonMousePressed();
   redButtonMousePressed();
   orangeButtonMousePressed();

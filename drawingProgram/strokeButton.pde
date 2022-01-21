@@ -8,6 +8,10 @@ float resetStrokeButtonX, resetStrokeButtonY, resetStrokeButtonWidth, resetStrok
 float strokeSize;
 Boolean thickButton = false, mediumButton = false, thinButton = false, resetStrokeButton = false;
 
+void strokeButtonSetup () {
+  strokeSize = 3;
+} //End StrokeButtonSetup
+
 void strokeButtonDraw() {
   stroke(black);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
