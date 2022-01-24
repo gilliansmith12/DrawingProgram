@@ -104,5 +104,16 @@ void assign() {
   redFillButtonHeight = orangeFillButtonHeight = yellowFillButtonHeight = greenFillButtonHeight = blueFillButtonHeight = purpleFillButtonHeight = pinkFillButtonHeight = brownFillButtonHeight = blackFillButtonHeight = greyFillButtonHeight = whiteFillButtonHeight = randomFillButtonHeight = displayHeight*15/400;
   resetBackgroundButtonHeight = displayHeight*15/100;
   //Dropdown Music Buttons
-  
+  musicButtonX = displayWidth*60/100;
+  musicButtonY = displayHeight*0;
+  musicButtonWidth = resetMusicButtonWidth = displayWidth*30/100;
+  musicButtonHeight = displayHeight*10/100;
+  rewindButtonX = skipBButtonX = resetMusicButtonX = displayWidth*60/100;
+  playButtonX = stopButtonX = displayWidth*70/100;
+  nextButtonX = skipFButtonX = displayWidth*80/100;
+  rewindButtonY = playButtonY = nextButtonY = resetMusicButtonY = displayHeight*10/100;
+  skipBButtonY = stopButtonY = skipFButtonY = displayHeight*35/200;
+  rewindButtonWidth = playButtonWidth = nextButtonWidth = skipBButtonWidth = stopButtonWidth = skipFButtonWidth = displayWidth*10/100;
+  rewindButtonHeight = playButtonHeight = nextButtonHeight = skipBButtonHeight = stopButtonHeight = skipFButtonHeight = displayHeight*15/200;
+  resetMusicButtonHeight = displayHeight*15/100;
 } //End Assign()

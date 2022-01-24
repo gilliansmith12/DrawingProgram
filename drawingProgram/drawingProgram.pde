@@ -37,6 +37,7 @@ void draw() {
   shapeButtonDraw();
   eraserButtonDraw();
   backgroundButtonDraw();
+  musicButtonDraw();
 } //End Draw()
 
 void mousePressed() {
