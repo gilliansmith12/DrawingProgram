@@ -10,9 +10,7 @@ Boolean isLineButton = false, isCircleButton = false, isSquareButton = false, is
 Boolean isLine = false, isCircle = false, isSquare = false, isTriangle = false;
 
 void shapeButtonSetup () {
-  if ( draw == true ) {
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }
+  isLine = true;
 } //End ShapeButtonSetup
 
 void shapeButtonDraw () {

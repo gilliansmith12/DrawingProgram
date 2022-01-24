@@ -1,4 +1,4 @@
-void arrayFixError () {
+void next () {
   if ( currentSong == numberOfSongs - 1 ) {
     currentSong = numberOfSongs - numberOfSongs;
     } else {
@@ -6,7 +6,7 @@ void arrayFixError () {
   }
 } //End ArrayFixError
 
-void arrayFixError2 () {
+void previous () {
   if ( currentSong == numberOfSongs - numberOfSongs ) {
     currentSong = numberOfSongs - 1;
     } else {

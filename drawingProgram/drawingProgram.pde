@@ -27,6 +27,7 @@ void setup() {
   strokeButtonSetup();
   shapeButtonSetup();
   backgroundButtonSetup();
+  musicButtonSetup();
   //
 } //End Setup()
 
@@ -103,6 +104,9 @@ void mousePressed() {
   largeButtonMousePressed();
   medButtonMousePressed();
   smallButtonMousePressed();
+  musicButtonMousePressed();
+  rewindButtonMousePressed();
+  playButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

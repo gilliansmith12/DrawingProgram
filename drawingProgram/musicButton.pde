@@ -1,4 +1,10 @@
 //Libraries
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
 
 //Global Variables
 Minim minim; //creates object to access all functions
@@ -13,7 +19,7 @@ float skipBButtonX, skipBButtonY, skipBButtonWidth, skipBButtonHeight;
 float stopButtonX, stopButtonY, stopButtonWidth, stopButtonHeight;
 float skipFButtonX, skipFButtonY, skipFButtonWidth, skipFButtonHeight;
 float resetMusicButtonX, resetMusicButtonY, resetMusicButtonWidth, resetMusicButtonHeight;
-Boolean isRewindButton = false, isPlayButton = false, isNextButton = false, isSkipBButton = false, isStopButton = false, isSkipFButton = false, isResetMusicButton = false;
+Boolean isMusicButton = false, isResetMusicButton = false;
 
 void musicButtonSetup () {
   minim = new Minim(this);
@@ -25,6 +31,11 @@ void musicButtonSetup () {
 } //End MusicButtonSetup
 
 void musicButtonDraw() {
+  fill(white);
+  stroke(black);
+  strokeWeight(1);
+  rect(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
+  //
   if ( song[currentSong].position() >= song[currentSong].length()-500 ) {
     song[currentSong].pause();
     song[currentSong].rewind();
@@ -36,6 +47,20 @@ void musicButtonDraw() {
     song[currentSong].play();
   }
   //
+  if ( isMusicButton == true ) {
+    fill(white);
+    stroke(black);
+    strokeWeight(1);
+    rect(rewindButtonX, rewindButtonY, rewindButtonWidth, rewindButtonHeight);
+    rect(playButtonX, playButtonY, playButtonWidth, playButtonHeight);
+    rect(nextButtonX, nextButtonY, nextButtonWidth, nextButtonHeight);
+    rect(skipBButtonX, skipBButtonY, skipBButtonWidth, skipBButtonHeight);
+    rect(stopButtonX, stopButtonY, stopButtonWidth, stopButtonHeight);
+    rect(skipFButtonX, skipFButtonY, skipFButtonWidth, skipFButtonHeight);
+    strokeWeight(strokeSize);
+    stroke(sketchColour);
+    fill(backgroundColour);
+  } //End Button
   if ( isResetMusicButton == true ) {
     noStroke();
     fill(background);
@@ -43,25 +68,18 @@ void musicButtonDraw() {
     fill(white);
     stroke(1);
   } //End ResetMenuButton
+  strokeWeight(strokeSize);
+  stroke(sketchColour);
+  fill(backgroundColour);
 } // End MusicButtonDraw
 
 void musicButtonMousePressed () {
   if ( mouseX > musicButtonX && mouseY > musicButtonY && mouseX < musicButtonX+musicButtonWidth && mouseY < musicButtonY+musicButtonHeight ) {
-    if ( isRewindButton == false && isPlayButton == false && isNextButton == false && isSkipBButton == false && isStopButton == false && isSkipFButton == false ) {
-      isRewindButton = true;
-      isPlayButton = true;
-      isNextButton = true;
-      isSkipBButton = true;
-      isStopButton = true;
-      isSkipFButton = true;
+    if ( isMusicButton == false ) {
+      isMusicButton = true;
       isResetMusicButton = false;
       } else {
-      isRewindButton = false;
-      isPlayButton = false;
-      isNextButton = false;
-      isSkipBButton = false;
-      isStopButton = false;
-      isSkipFButton = false;
+      isMusicButton = false;
       isResetMusicButton = true;
     }
   } //End Music Button
@@ -72,21 +90,21 @@ void rewindButtonMousePressed () {
     if ( song[currentSong].isPlaying() ) {
       song[currentSong].pause();
       song[currentSong].rewind();
-      arrayFixError2();
+      previous();
       song[currentSong].play();
       } else {
         song[currentSong].rewind();
-        arrayFixError2();
+        previous();
       }
   } //End Rewind Button
 } //End RewindButtonMousePressed
 
 void playButtonMousePressed () {
   if ( mouseX > playButtonX && mouseY > playButtonY && mouseX < playButtonX+playButtonWidth && mouseY < playButtonY+playButtonHeight ) {
-   if ( song1.isPlaying() ) {
-     song1.pause();
+   if ( song[currentSong].isPlaying() ) {
+     song[currentSong].pause();
      } else {
-       song1.play();
+       song[currentSong].play();
      }
-   }
+   } //End Play Button
 } //End PlayButtonMousePressed
