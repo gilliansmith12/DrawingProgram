@@ -116,4 +116,9 @@ void assign() {
   rewindButtonWidth = playButtonWidth = nextButtonWidth = skipBButtonWidth = stopButtonWidth = skipFButtonWidth = displayWidth*10/100;
   rewindButtonHeight = playButtonHeight = nextButtonHeight = skipBButtonHeight = stopButtonHeight = skipFButtonHeight = displayHeight*15/200;
   resetMusicButtonHeight = displayHeight*15/100;
+  //Dropdown Mute Buttons
+  muteButtonX = displayWidth*90/100;
+  muteButtonY = displayHeight*0;
+  muteButtonWidth = displayWidth*10/100;
+  muteButtonHeight = displayHeight*10/100;
 } //End Assign()

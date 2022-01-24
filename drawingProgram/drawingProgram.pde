@@ -47,6 +47,7 @@ void draw() {
   eraserButtonDraw();
   backgroundButtonDraw();
   musicButtonDraw();
+  muteButtonDraw();
 } //End Draw()
 
 void mousePressed() {
@@ -107,6 +108,11 @@ void mousePressed() {
   musicButtonMousePressed();
   rewindButtonMousePressed();
   playButtonMousePressed();
+  nextButtonMousePressed();
+  skipBButtonMousePressed();
+  stopButtonMousePressed();
+  skipFButtonMousePressed();
+  muteButtonMousePressed();
 } //End MousePressed()
 
 void keyPressed() {

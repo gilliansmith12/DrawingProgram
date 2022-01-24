@@ -209,3 +209,113 @@ void backgroundButtonTextCode (String text, int size, float rectX, float rectY, 
   text(backgroundText, backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight);
   fill(white); //reset
 } //End Text
+
+void musicButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(musicText, musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void rewindButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(rewindText, rewindButtonX, rewindButtonY, rewindButtonWidth, rewindButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void playButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(playText, playButtonX, playButtonY, playButtonWidth, playButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void pauseButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(pauseText, playButtonX, playButtonY, playButtonWidth, playButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void nextButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(nextText, nextButtonX, nextButtonY, nextButtonWidth, nextButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void skipBButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(skipBText, skipBButtonX, skipBButtonY, skipBButtonWidth, skipBButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void stopButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(stopText, stopButtonX, stopButtonY, stopButtonWidth, stopButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void skipFButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(skipFText, skipFButtonX, skipFButtonY, skipFButtonWidth, skipFButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void muteButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(muteText, muteButtonX, muteButtonY, muteButtonWidth, muteButtonHeight);
+  fill(white); //reset
+} //End Text
+
+void unmuteButtonTextCode (String text, int size, float rectX, float rectY, float rectWidth, float rectHeight) {
+  fill(black); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(font, size); //Change the number until it fits, largest font size
+  //textFont() has option to combine font declaration with textSize()
+  //Drawing Text
+  text(unmuteText, muteButtonX, muteButtonY, muteButtonWidth, muteButtonHeight);
+  fill(white); //reset
+} //End Text
